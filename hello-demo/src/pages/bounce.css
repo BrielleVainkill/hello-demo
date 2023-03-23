@@ -1,0 +1,47 @@
+
+
+ body {
+    margin: 0;
+    background-image: url("../bg.jpg");
+  }
+  #bounce {
+    
+    height: 100vh;
+  }
+
+  .y, .x {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .x {
+    -webkit-animation: x 10s linear infinite alternate;
+            animation: x 10s linear infinite alternate;
+  }
+  
+  .y {
+    -webkit-animation: y 5s linear infinite alternate;
+            animation: y 5s linear infinite alternate;
+  }
+  
+  @-webkit-keyframes x {
+    100% {
+      transform: translateX(calc(100vw - 100px));
+    }
+  }
+  
+  @keyframes x {
+    100% {
+      transform: translateX(calc(100vw - 100px));
+    }
+  }
+  @-webkit-keyframes y {
+    100% {
+      transform: translateY(calc(100vh - 100px));
+    }
+  }
+  @keyframes y {
+    100% {
+      transform: translateY(calc(100vh - 100px));
+    }
+  }
